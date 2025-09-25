@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chat App Design System - Dark Theme with Red Accents */
+
+@layer base {
+  :root {
+    /* Chat App Color System */
+    --background: 220 13% 8%;              /* Deep dark background */
+    --foreground: 0 0% 95%;                /* Light text */
+    
+    --chat-background: 220 13% 8%;         /* Main chat background */
+    --chat-header: 220 13% 10%;            /* Header background */
+    
+    /* Message Colors */
+    --message-received: 220 9% 85%;        /* Light gray for received messages */
+    --message-received-text: 220 13% 15%;  /* Dark text on received messages */
+    --message-sent: 0 65% 45%;             /* Red/maroon for sent messages */
+    --message-sent-text: 0 0% 98%;         /* White text on sent messages */
+    
+    /* Status and UI Elements */
+    --status-background: 220 13% 12%;      /* Status bar background */
+    --status-text: 220 9% 65%;             /* Status text color */
+    --input-background: 0 0% 98%;          /* White input background */
+    --input-text: 220 13% 15%;             /* Dark input text */
+    --input-placeholder: 220 9% 65%;       /* Placeholder text */
+    
+    /* Interactive Elements */
+    --accent-red: 0 65% 45%;               /* Primary red accent */
+    --accent-red-hover: 0 65% 40%;         /* Darker red for hover */
+    
+    /* Avatars and Icons */
+    --avatar-anonymous: 220 9% 75%;        /* Gray for anonymous avatars */
+    --icon-primary: 220 9% 65%;            /* Icon color */
+    --icon-accent: 0 65% 45%;              /* Red accent icons */
+    
+    /* Shadows and Effects */
+    --shadow-soft: 0 0% 0% / 0.1;          /* Subtle shadows */
+    --shadow-message: 0 0% 0% / 0.08;      /* Message shadows */
+    
+    /* Standard shadcn mappings */
+    --card: 220 13% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 220 13% 10%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 0 65% 45%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 9% 85%;
+    --secondary-foreground: 220 13% 15%;
+    --muted: 220 9% 75%;
+    --muted-foreground: 220 9% 45%;
+    --accent: 0 65% 45%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 20%;
+    --input: 0 0% 98%;
+    --ring: 0 65% 45%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
